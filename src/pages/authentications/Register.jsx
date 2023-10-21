@@ -11,11 +11,8 @@ const Register = () => {
     googleSignIn()
       .then((result) => {
         console.log(result);
-
-     
       })
       .catch((error) => {
-      
         console.log(error);
       });
   };
@@ -32,18 +29,21 @@ const Register = () => {
 
     console.log(name, email, password, photo);
 
-    createUser(email, password)
-      .then((result) => {
-        console.log(result.user);
-        setUser(result.user);
-        updateUser(name, photo);
-        Swal("Successfully registered");
-        location.reload();
-      })
-      .catch((error) => console.error(error));
-    //    if (email && password) {
-    //      form.reset();
-    //    }
+    if (!/^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>]).{6,}$/.test(password)) {
+      Swal.fire(
+        " The password must contain 6 characters, a capital letter and a special character"
+      );
+    } else {
+      createUser(email, password)
+        .then((result) => {
+          console.log(result.user);
+          setUser(result.user);
+          updateUser(name, photo);
+          location.reload();
+          // Swal("Successfully registered");
+        })
+        .catch((error) => console.error(error));
+    }
   };
 
   return (
