@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "image": "https://media.licdn.com/dms/image/D4D12AQHwi4jdRd3fQQ/article-cover_image-shrink_600_2000/0/1685279753620?e=2147483647&v=beta&t=7I-pJ0kDQfNl4w-0Ue8aPyol_X-aWOQlzp18NhTldys"
+  },
+  {
+    "id": 2,
+    "name": "Google",
+    "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+  },
+  {
+    "id": 3,
+    "name": "Intel",
+    "image": "https://www.thoughtco.com/thmb/xA0zo7FUyCKKiuR39yl56V2y5so=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/intel-logo-56a6fa195f9b58b7d0e5ce3a.png"
+  },
+  {
+    "id": 4,
+    "name": "Canon",
+    "image": "https://static.vecteezy.com/system/resources/previews/020/190/413/non_2x/canon-logo-canon-icon-free-free-vector.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Samsung",
+    "image": "https://images.samsung.com/is/image/samsung/assets/us/about-us/brand/logo/mo/360_197_1.png?$FB_TYPE_B_PNG$"
+  },
+  {
+    "id": 6,
+    "name": "JBl",
+    "image": "https://logowik.com/content/uploads/images/jbl7354.jpg"
+  }
+]

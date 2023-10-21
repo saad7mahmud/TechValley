@@ -1,0 +1,31 @@
+Iphone
+
+Ad Image:
+1: https://i.ibb.co/Pj1W2wJ/iphone-ad1.jpg
+2: https://i.ibb.co/LYYzRFz/iphone-ad2.jpg
+3: https://i.ibb.co/Fmh71jK/iphone-ad3.jpg
+
+4: https://i.ibb.co/Kj0tFDV/iphone-ad4.jpg
+5: https://i.ibb.co/kDstCvq/iphone-ad5.jpg
+6: https://i.ibb.co/jy0kMcQ/iphone-ad6.jpg
+
+Main Image:
+123: https://i.ibb.co/HVHF4nx/iphone-card123.jpg
+456: https://i.ibb.co/vqJNDCT/iphone-card456.jpg
+
+
+Google
+
+Ad Image:
+1: https://i.ibb.co/Lx4BtYj/google-ad1.jpg
+2. https://i.ibb.co/DDxZbVF/google-ad2.jpg
+3. https://i.ibb.co/0Q1j5RD/google-ad3.jpg
+
+4. https://i.ibb.co/K23h9BR/google-ad4.jpg
+5. https://i.ibb.co/WHqcBVN/google-ad5.jpg
+6. https://i.ibb.co/80sLQWq/google-ad6.jpg
+
+
+Main Image:
+123: https://i.ibb.co/wyGV7j1/google-card123.jpg
+456: https://i.ibb.co/P1YYfhH/google-card456.jpg
