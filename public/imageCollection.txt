@@ -22,6 +22,11 @@ Main Image:
 456: https://i.ibb.co/vqJNDCT/iphone-card456.jpg
 
 
+https://i.ibb.co/VQL8d8V/apple-product1.jpg
+https://i.ibb.co/KL3y8Xw/apple-product2.jpg
+https://i.ibb.co/TrRTxjg/apple-product3.jpg
+
+
 Google
 
 Ad Image:
@@ -37,3 +42,40 @@ Ad Image:
 Main Image:
 123: https://i.ibb.co/wyGV7j1/google-card123.jpg
 456: https://i.ibb.co/P1YYfhH/google-card456.jpg
+
+
+https://i.ibb.co/Sv5GFWs/google-product1.jpg
+https://i.ibb.co/RHYmKdF/google-product2.jpg
+https://i.ibb.co/hdzBJS3/google-product3.jpg
+
+
+Canon
+https://i.ibb.co/sg0ggfQ/canon-product1.jpg
+https://i.ibb.co/DY4YSLx/canon-product2.jpg
+https://i.ibb.co/ph07zdB/canon-product3.jpg
+https://i.ibb.co/0cRxh8R/canon-product4.jpg
+
+https://i.ibb.co/K0crSwh/canon-ad1.jpg
+https://i.ibb.co/W01Kf0C/canon-ad2.jpg
+https://i.ibb.co/3fHWYYz/canon-ad3.jpg
+
+
+Samsung
+https://i.ibb.co/kyYxHvv/samsung-ad1.jpg
+https://i.ibb.co/NZff9dj/samsung-ad2.jpg
+https://i.ibb.co/9vCwJNK/samsung-ad3.jpg
+
+https://i.ibb.co/LrNw7K3/samsung-product1.jpg
+https://i.ibb.co/g31pLNL/samsung-product2.jpg
+https://i.ibb.co/gFP7yWC/samsung-product3.jpg
+https://i.ibb.co/DYkxKDd/samsung-product4.jpg
+
+JBL
+https://i.ibb.co/b6SFbQv/jbl-ad1.jpg
+https://i.ibb.co/qR9gg9T/jbl-ad2.jpg
+https://i.ibb.co/MZz7myr/jbl-ad3.jpg
+
+https://i.ibb.co/qgq39kg/jbl-product1.jpg
+https://i.ibb.co/dJ4S3Ms/jbl-product2.jpg
+https://i.ibb.co/Px0tF2s/jbl-product3.jpg
+https://i.ibb.co/GkSRRqH/jbl-product4.jpg

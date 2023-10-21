@@ -63,8 +63,8 @@ const UpdateProduct = () => {
         if (data.modifiedCount) {
           Swal.fire({
             icon: "success",
-            title: "Added",
-            text: "Product Successfully Added!",
+            title: "Updated!",
+            text: "Product Successfully Updated.",
           });
         }
       });
@@ -72,15 +72,16 @@ const UpdateProduct = () => {
 
   return (
     <div>
-    <p className="text-center font-bold text-4xl mt-10">Update Product</p>
       <div
         className="max-w-md m-10 w-4/5
-    mx-auto p-4 border shadow-md rounded-lg"
+        mx-auto p-4 border shadow-md rounded-lg"
       >
         <form onSubmit={handleUpdate}>
+        <p className="text-center font-bold text-4xl mt-4">Update Product</p>
+        <h2 className="text-center m-4">Asterisk (*) marked fields are required</h2>
           <div className="mb-4">
             <label htmlFor="image" className="block text-gray-600">
-              Image:
+              Image*:
             </label>
             <input
               type="text"
@@ -94,7 +95,7 @@ const UpdateProduct = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-600">
-              Name:
+              Name*:
             </label>
             <input
               type="text"
@@ -108,7 +109,7 @@ const UpdateProduct = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="brand" className="block text-gray-600">
-              Brand:
+              Brand*:
             </label>
             <select
               id="brand"
@@ -126,7 +127,7 @@ const UpdateProduct = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="type" className="block text-gray-600">
-              Type:
+              Type*:
             </label>
             <select
               id="type"
@@ -144,7 +145,7 @@ const UpdateProduct = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="price" className="block text-gray-600">
-              Price:
+              Price*:
             </label>
             <input
               type="number"
@@ -158,7 +159,7 @@ const UpdateProduct = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="description" className="block text-gray-600">
-              Short Description:
+              Short Description*:
             </label>
             <textarea
               id="description"
@@ -171,7 +172,7 @@ const UpdateProduct = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="rating" className="block text-gray-600">
-              Rating:
+              Rating*:
             </label>
             <input
               type="number"
@@ -194,7 +195,7 @@ const UpdateProduct = () => {
               type="text"
               id="adImage1"
               name="adImage1"
-              required
+              // required
               defaultValue={loadData.adImage1}
               className="w-full border rounded-md p-2 focus:outline-none focus:ring focus:border-blue-300"
               placeholder="URL of advertisement image 1"
@@ -207,7 +208,7 @@ const UpdateProduct = () => {
             <input
               type="text"
               id="adImage2"
-              required
+              // required
               name="adImage2"
               defaultValue={loadData.adImage2}
               className="w-full border rounded-md p-2 focus:outline-none focus:ring focus:border-blue-300"
@@ -220,7 +221,7 @@ const UpdateProduct = () => {
             </label>
             <input
               type="text"
-              required
+              // required
               id="adImage3"
               name="adImage3"
               defaultValue={loadData.adImage3}

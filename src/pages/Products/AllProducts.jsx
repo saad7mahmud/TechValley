@@ -22,7 +22,7 @@ const AllProducts = () => {
                   There is no product available on our shop of this brand.
                   Kindly browse others.
                 </p>
-                <Link to='/'>
+                <Link to="/">
                   <button className="btn btn-primary">Go Home</button>
                 </Link>
               </div>
@@ -103,62 +103,73 @@ const AllProducts = () => {
               />
             </Carousel>
           </div>
-          {specificBrands.map((specificBrand) => (
-            <div key={specificBrand._id} className="flex mx-auto">
-              <div className="flex mx-auto">
-                <div className="m-5  relative text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
-                  <div className="relative  mx-4 mt-4 overflow-hidden text-white rounded-xl  bg-clip-border shadow-blue-gray-500/40">
-                    <img
-                      className="w-56"
-                      src={specificBrand.image}
-                      alt="img-blur-shadow"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h5 className=" mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                      {specificBrand.name}
-                    </h5>
-                    <p className=" font-normal text-base antialiased  leading-relaxed text-inherit">
-                      Brand Name:
-                      <span className="font-bold"> {specificBrand.brand}</span>
-                    </p>
-                    <p className=" font-normal text-base antialiased  leading-relaxed text-inherit">
-                      Type:
-                      <span className="font-bold"> {specificBrand.type}</span>
-                    </p>
-                    <p className=" font-normal text-base antialiased  leading-relaxed text-inherit">
-                      Price:
-                      <span className="font-bold"> ${specificBrand.price}</span>
-                    </p>
-                    <p className=" font-normal text-base antialiased  leading-relaxed text-inherit">
-                      Rating:
-                      <span className="font-bold"> {specificBrand.rating}</span>
-                    </p>
-                  </div>
-                  <div className="p-6 pt-0 ">
-                    <Link to={`/product-details/${specificBrand._id}`}>
-                      <button
-                        className=" m-1 select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                        type="button"
-                        data-ripple-light="true"
-                      >
-                        Details
-                      </button>
-                    </Link>
-                    <Link to={`/update-product/${specificBrand._id}`}>
-                      <button
-                        className="m-1 select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                        type="button"
-                        data-ripple-light="true"
-                      >
-                        Update
-                      </button>
-                    </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 my-10">
+            {specificBrands.map((specificBrand) => (
+              <div key={specificBrand._id} className="flex mx-auto">
+                <div className="flex mx-auto">
+                  <div className="m-5  relative text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
+                    <div className="relative  mx-4 mt-4 overflow-hidden text-white rounded-xl  bg-clip-border shadow-blue-gray-500/40">
+                      <img
+                        className="w-56"
+                        src={specificBrand.image}
+                        alt="img-blur-shadow"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h5 className=" mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                        {specificBrand.name}
+                      </h5>
+                      <p className=" font-normal text-base antialiased  leading-relaxed text-inherit">
+                        Brand Name:
+                        <span className="font-bold">
+                          {" "}
+                          {specificBrand.brand}
+                        </span>
+                      </p>
+                      <p className=" font-normal text-base antialiased  leading-relaxed text-inherit">
+                        Type:
+                        <span className="font-bold"> {specificBrand.type}</span>
+                      </p>
+                      <p className=" font-normal text-base antialiased  leading-relaxed text-inherit">
+                        Price:
+                        <span className="font-bold">
+                          {" "}
+                          ${specificBrand.price}
+                        </span>
+                      </p>
+                      <p className=" font-normal text-base antialiased  leading-relaxed text-inherit">
+                        Rating:
+                        <span className="font-bold">
+                          {" "}
+                          {specificBrand.rating}
+                        </span>
+                      </p>
+                    </div>
+                    <div className="p-6 pt-0 flex justify-center ">
+                      <Link to={`/product-details/${specificBrand._id}`}>
+                        <button
+                          className=" m-1 select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                          type="button"
+                          data-ripple-light="true"
+                        >
+                          Details
+                        </button>
+                      </Link>
+                      <Link to={`/update-product/${specificBrand._id}`}>
+                        <button
+                          className="m-1 select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                          type="button"
+                          data-ripple-light="true"
+                        >
+                          Update
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
     </div>

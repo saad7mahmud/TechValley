@@ -26,7 +26,6 @@ const AddProduct = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Product data submitted:", product);
-  
 
     fetch("http://localhost:5000/add-product", {
       method: "POST",
@@ -67,11 +66,12 @@ const AddProduct = () => {
       className="max-w-md w-4/5 m-10 
     mx-auto p-4 border shadow-md rounded-lg"
     >
-      <h2 className="text-2xl font-semibold mb-4">Add a New Product</h2>
+      <h2 className="text-center font-bold text-4xl m-4">Add New Product</h2>
+      <h2 className="text-center mb-4">Asterisk (*) marked fields are required</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="image" className="block text-gray-600">
-            Image:
+            Image*:
           </label>
           <input
             type="text"
@@ -86,7 +86,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-600">
-            Name:
+            Name*:
           </label>
           <input
             type="text"
@@ -101,7 +101,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="brand" className="block text-gray-600">
-            Brand:
+            Brand*:
           </label>
           <select
             id="brand"
@@ -120,7 +120,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="type" className="block text-gray-600">
-            Type:
+            Type*:
           </label>
           <select
             id="type"
@@ -139,7 +139,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="price" className="block text-gray-600">
-            Price:
+            Price*:
           </label>
           <input
             type="number"
@@ -154,7 +154,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="description" className="block text-gray-600">
-            Short Description:
+            Short Description*:
           </label>
           <textarea
             id="description"
@@ -168,7 +168,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-4">
           <label htmlFor="rating" className="block text-gray-600">
-            Rating:
+            Rating*:
           </label>
           <input
             type="number"
@@ -192,7 +192,7 @@ const AddProduct = () => {
             type="text"
             id="adImage1"
             name="adImage1"
-            required
+            // required
             value={product.adImage1}
             onChange={handleChange}
             className="w-full border rounded-md p-2 focus:outline-none focus:ring focus:border-blue-300"
@@ -206,7 +206,7 @@ const AddProduct = () => {
           <input
             type="text"
             id="adImage2"
-            required
+            // required
             name="adImage2"
             value={product.adImage2}
             onChange={handleChange}
@@ -220,7 +220,7 @@ const AddProduct = () => {
           </label>
           <input
             type="text"
-            required
+            // required
             id="adImage3"
             name="adImage3"
             value={product.adImage3}

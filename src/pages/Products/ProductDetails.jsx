@@ -67,7 +67,7 @@ const ProductDetails = () => {
         <div className="flex mx-auto ">
           <div className="m-5  relative text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
             <div className="relative  mx-4 mt-4 overflow-hidden text-white rounded-xl  bg-clip-border shadow-blue-gray-500/40">
-              <img className="w-full" src={image} alt="img-blur-shadow" />
+              <img className="w-3/5 flex mx-auto" src={image} alt="img-blur-shadow" />
             </div>
             <div className="p-6">
               <h5 className=" mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal">
