@@ -3,7 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 const AllProducts = () => {
   const specificBrands = useLoaderData();
 
-  //   console.log(specificBrands[0]);
+  
 
   const advertiseBrand = specificBrands[0];
   const { _id } = specificBrands;

@@ -56,7 +56,7 @@ const ProductDetails = () => {
         }
       });
   };
-  // Sending data to backend
+
 
   return (
     <div className="m-10">
