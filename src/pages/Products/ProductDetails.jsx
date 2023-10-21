@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 
 const ProductDetails = () => {
   const singleProduct = useLoaderData();
+  console.log(singleProduct);
   const {
     adImage1,
     adImage2,
@@ -15,9 +16,20 @@ const ProductDetails = () => {
     rating,
     type,
     _id,
-    } = singleProduct;
-    
-    
+  } = singleProduct;
+
+  const oneProduct = {
+    adImage1,
+    adImage2,
+    adImage3,
+    brand,
+    description,
+    image,
+    name,
+    price,
+    rating,
+    type,
+  };
 
   // Sending data to backend
 
@@ -30,7 +42,7 @@ const ProductDetails = () => {
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(singleProduct),
+      body: JSON.stringify(oneProduct),
     })
       .then((res) => res.json())
       .then((data) => {
