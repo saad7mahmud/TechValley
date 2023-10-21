@@ -22,7 +22,7 @@ const Cart = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/cart/${_id}`, {
+        fetch(`https://brand-shop-server-sage.vercel.app/cart/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -39,14 +39,6 @@ const Cart = () => {
       }
     });
   };
-
-  //   const handleDelete = (_id) => {
-  //     fetch(`http://localhost:5000/cart/${_id}`, {
-  //       method: "DELETE",
-  //     })
-  //       .then((res) => res.json())
-  //       .then((data) => console.log(data));
-  //   };
 
   return (
     <div>

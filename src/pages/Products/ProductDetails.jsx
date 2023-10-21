@@ -37,7 +37,7 @@ const ProductDetails = () => {
     e.preventDefault();
     console.log(e);
 
-    fetch(`http://localhost:5000/product-details/${_id}`, {
+    fetch(`https://brand-shop-server-sage.vercel.app/product-details/${_id}`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -57,7 +57,6 @@ const ProductDetails = () => {
       });
   };
 
-
   return (
     <div className="m-10">
       <h1 className="text-center text-4xl font-semibold underline">
@@ -67,7 +66,11 @@ const ProductDetails = () => {
         <div className="flex mx-auto ">
           <div className="m-5  relative text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
             <div className="relative  mx-4 mt-4 overflow-hidden text-white rounded-xl  bg-clip-border shadow-blue-gray-500/40">
-              <img className="w-3/5 flex mx-auto" src={image} alt="img-blur-shadow" />
+              <img
+                className="w-3/5 flex mx-auto"
+                src={image}
+                alt="img-blur-shadow"
+              />
             </div>
             <div className="p-6">
               <h5 className=" mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal">

@@ -45,7 +45,9 @@ const routers = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product-details/${params.id}`),
+          fetch(
+            `https://brand-shop-server-sage.vercel.app/product-details/${params.id}`
+          ),
       },
       {
         path: "/my-cart",
@@ -54,14 +56,16 @@ const routers = createBrowserRouter([
             <Cart></Cart>
           </PrivateRoutes>
         ),
-        loader: () => fetch("http://localhost:5000/cart"),
+        loader: () => fetch("https://brand-shop-server-sage.vercel.app/cart"),
       },
 
       {
         path: "/all-products/:brand",
         element: <AllProducts></AllProducts>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/all-products/${params.brand}`),
+          fetch(
+            `https://brand-shop-server-sage.vercel.app/all-products/${params.brand}`
+          ),
       },
       {
         path: "/product-details/:id",
@@ -71,7 +75,9 @@ const routers = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product-details/${params.id}`),
+          fetch(
+            `https://brand-shop-server-sage.vercel.app/product-details/${params.id}`
+          ),
       },
     ],
   },

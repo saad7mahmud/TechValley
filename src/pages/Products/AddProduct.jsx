@@ -27,7 +27,7 @@ const AddProduct = () => {
     e.preventDefault();
     console.log("Product data submitted:", product);
 
-    fetch("http://localhost:5000/add-product", {
+    fetch("https://brand-shop-server-sage.vercel.app/add-product", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -67,7 +67,9 @@ const AddProduct = () => {
     mx-auto p-4 border shadow-md rounded-lg"
     >
       <h2 className="text-center font-bold text-4xl m-4">Add New Product</h2>
-      <h2 className="text-center mb-4">Asterisk (*) marked fields are required</h2>
+      <h2 className="text-center mb-4">
+        Asterisk (*) marked fields are required
+      </h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="image" className="block text-gray-600">
