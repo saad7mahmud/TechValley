@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const FeatureCard = ({ title, description, icon }) => (
-  <div className="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden m-4">
+  <div className="max-w-sm mx-auto m-4 bg-white shadow-md rounded-lg overflow-hidden ">
     <div className="text-center py-4">
       <FontAwesomeIcon icon={icon} className="text-4xl text-blue-500" />
     </div>
@@ -24,7 +24,7 @@ const Features = () => {
       <h2 className="text-center mb-10 text-4xl font-medium underline">
         Our Features
       </h2>
-      <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
+      <div className="text-center m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
         <FeatureCard
           title="Wide Product Range"
           description="Explore a wide range of mobiles, laptops, and other tech gadgets."

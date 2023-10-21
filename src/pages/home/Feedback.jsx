@@ -29,7 +29,7 @@ const Feedback = () => {
       <h2 className="text-center mb-10 text-4xl font-medium underline">
         Feedback Form
       </h2>
-      <div className="my-10 max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
+      <div className="my-10 w-4/5 max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-600">

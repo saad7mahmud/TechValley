@@ -74,7 +74,7 @@ const UpdateProduct = () => {
     <div>
     <p className="text-center font-bold text-4xl mt-10">Update Product</p>
       <div
-        className="max-w-md m-10 
+        className="max-w-md m-10 w-4/5
     mx-auto p-4 border shadow-md rounded-lg"
       >
         <form onSubmit={handleUpdate}>

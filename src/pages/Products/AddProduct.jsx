@@ -64,7 +64,7 @@ const AddProduct = () => {
 
   return (
     <div
-      className="max-w-md m-10 
+      className="max-w-md w-4/5 m-10 
     mx-auto p-4 border shadow-md rounded-lg"
     >
       <h2 className="text-2xl font-semibold mb-4">Add a New Product</h2>

@@ -29,7 +29,7 @@ function ThemeSwitcher() {
         />
       </label>
 
-      <p>{isChecked ? "Light Mode" : "Dark Mode"}</p>
+      <p className="px-2">{isChecked ? "Light Mode" : "Dark Mode"}</p>
     </div>
   );
 }
